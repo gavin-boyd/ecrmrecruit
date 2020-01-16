@@ -390,12 +390,19 @@ html { background-color: #f4f4f4; }
 */
 
 /* Theses styles affect the color of Tabbed Navigation on Application page */
-
-/*
-  ul.app-nav li a { color: #08234f; }
-  ul.app-nav li a:hover { color: #08234f; }
-  ul.app-nav li a.active { border-bottom: 2px solid #08234f; color: #08234f; }
-*/
+ul.app-nav li a
+{
+  color: #005c97;
+}
+ul.app-nav li a:hover
+{
+  color: #004f82;
+}
+ul.app-nav li a.active
+{
+  border-bottom: 2px solid #005c97;
+  color: #005c97;
+}
 
 /* This style affects the color of Print img on Application card */
 
