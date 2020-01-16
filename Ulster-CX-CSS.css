@@ -1,0 +1,254 @@
+/********
+The styles with colors and images have been identified for you.  To adjust the styles remove the comment out tags (/*) surrounding the style you would like to change.
+
+To change a color, replace the hexadecimal number/ color name with a new one of your choosing.
+
+To change images, there're several options:
+1. Add an external URL of image as the picture path
+2. Create a web resource in CRM and add your new image there. Then use the following format as the URL of image in the custom css:  http://<domain>/<image url>
+
+<domain> i.e. http://localhost/Ellucian.Recruit.Mvc/
+<image url> File/DownloadPicture?name=<the name of the webresource>
+
+The URL of image will be http://localhost/Ellucian.Recruit.Mvc/File/DownloadPicture?name=<the name of the webresource>
+
+3. Convert your image into a base 64 string (lots of websites do that for free) and then add that string as the background image in the CSS.
+
+For additional style attributes refer to the recruit-site.css and recruit-navbar.css file  ********/
+
+/*  The styles below are related to all the pages
+    The @media rule is used in media queries to apply different styles for different media types/devices.*/
+
+/*	To apply styles that only affect the desktop views:
+	@media (min-width: 992px) : affect the style when screen size is 992px wide or more
+
+	To apply styles that affect the desktop and tablet views:
+    @media (min-width: 768px) : affect the style when screen size is 768px wide or more
+
+	To apply styles that affect the tablet and mobile views:
+	@media (max-width: 991px) : affect the style when screen size is 991px wide or less
+
+	To apply styles that only affect the mobile views:
+	@media (max-width: 767px) : affect the style when screen size is 767px wide or less*/
+
+
+/* Theses styles affect the styles for Navigation Bar */
+
+.recruit-navbar { background-color: #08234f;  border-bottom-color: #09b1db }
+
+.recruit-navbar .navbar-nav > li > a { color: #ffffff; background-color: #08234f; }
+
+.recruit-navbar .navbar-nav > li > a:hover,.recruit-navbar .navbar-nav > li > a:focus { background-color: #08234f;color: #ffffff; }
+
+.recruit-navbar .navbar-nav > li > form { color: #ffffff; background-color: #08234f; }
+
+.recruit-navbar .navbar-nav > li > form > a:hover,.recruit-navbar .navbar-nav > li > form > a:focus { background-color: #08234f;color: #ffffff; }
+
+@media (min-width: 768px) { .recruit-navbar .main-navbar > li:hover:after,.recruit-navbar .main-navbar > li.active:after { background-color: #09b1db; } }
+
+.recruit-navbar .navbar-nav > .active > a,.recruit-navbar .navbar-nav > .active > a:hover,.recruit-navbar .navbar-nav > .active > a:focus { color: #ffffff; background-color: #08234f; }
+
+.dropdown-menu > li > .form-link:hover,.dropdown-menu > li > .form-link:focus { color: #ffffff; text-decoration: none; background-color: #414545; }
+
+.navbar-nav > li > .dropdown-menu { background-color: #414545; }
+.navbar-nav > li > .dropdown-menu li:hover { background-color: #b5bfbf; }
+.navbar-nav > li > .dropdown-menu li a { color: #ffffff; }
+
+
+.recruit-navbar-logo { background-image: url("https://ulsteracuktestcrm.elluciancrmrecruit.com//WebResources/uu_UlsterUniversityLogo"); }
+
+
+
+
+/* This style affects the border color and background image for Login/Reset Password/Change Password/My Account/ Prospect Inquiry Verify pages, no background image in mobile mode */
+
+.account-background .elcn-content { border: #08234f; }
+@media (min-width: 768px) {.account-background {background-image: url("https://www.ulster.ac.uk/__data/assets/image/0006/66039/1.1.jpg");} }
+
+
+/* Theses styles affect the colors for primary buttons */
+
+.btn-primary { background-color: #08234f; color: #ffffff; border-color: #08234f; }
+.btn-primary:focus { color: #fff; background-color: #08234f; border-color: #08234f; }
+.btn-primary:hover { color: #fff; background-color: #08234f; border-color: #08234f; }
+.btn-primary:active { color: #fff; background-color: #08234f; border-color: #08234f; }
+.btn-primary:active:focus { color: #fff; background-color: #08234f; border-color: #08234f; }
+.btn-primary:disabled { background-color: #b2b3b7; border-color: #4b4e56; color: #ffffff; }
+
+
+/* Theses styles affect the colors for secondary buttons */
+/*
+.btn-secondary { color: #49b0c6; background: #ffffff; border-color: #49b0c6; }
+
+.btn-secondary:focus { background-color: #49b0c6; border-color: #49b0c6; color: #ffffff; }
+
+.btn-secondary:hover,.btn-secondary:active { color: #ffffff; background-color: #49b0c6; border-color: #49b0c6; }
+
+.btn-secondary:disabled { background-color: #b2b3b7; border-color: #4b4e56; color: #ffffff; }
+*/
+
+/* Theses styles affect the colors for tertiary (application subform) buttons */
+/*
+.subform.add { color: #0074db; background: #ffffff; border: 1px solid #fff; }
+
+.subform.add:focus { color: #245580; border-color: #fff; }
+
+.subform.add:hover,.subform.add:active { color: #245580; background-color: #fff; }
+*/
+
+/* Theses styles affect the color of Application Form Tabs on Application card */
+/*
+.nav > li > input.tab-header:hover { color: #08234f; }
+
+.nav-tabs > li.active > div.tab-header, .nav-tabs > li.active > div.tab-header:hover, .nav-tabs > li.active > div.tab-header:focus { color: #08234f; border-bottom: 3px solid #08234f; }
+*/
+
+/* Theses styles affect the colors for SELECT inputs */
+/*
+select { color: #333333;  border-color: #999999; }
+
+select:disabled { color: #808080; }
+*/
+
+
+/* These styles affects headers' font-sizes and colors*/
+/*
+h1 { font-size: 36px; color: #08234f - Teal; }
+@media (max-width: 991px) { h1 { font-size: 30px; } }
+
+h2 { font-size: 26px;  color: Teal; }
+@media (max-width: 991px) { h2 { font-size: 24px; } }
+
+h3 { font-size: 21px;  color: Teal; }
+
+h4 { font-size: 18px;  color: Teal; }
+@media (max-width: 991px) { h4 { font-size: 16px; } }
+*/
+
+
+/* These styles affect the links and visited/hover/active colors of linked text */
+/*
+a:link { color: #08234f;  font-size: 14px; }
+
+a:visited { color: #08234f; }
+
+a:hover { color: ##08234f; }
+
+a:active { color: #08234f; }
+*/
+
+/* These styles affect the links and visited/hover/active colors of inputs */
+/*
+input, .form-control { color: #333333; border: #999999; }
+
+input:focus, input:active { border-color: #51abff; }
+
+input[type="file"]:focus { outline: #0074db; }
+*/
+
+/* Theses styles affect the color of Spinner */
+/*
+.loader { border-left: 1.1em solid #5353d1; }
+*/
+
+/* These styles affect the text color, icon color and background color of notification messages*/
+/*
+.card-approved-notification { background-color: #e7f4ef; color: #008751; }
+
+.approved-close-icon { color: #00af69; }
+
+.card-approved-icon { color: #00af69;}
+
+.card-warning-notification { background-color: #f5f2e7; color: #8a6a00; }
+
+.warning-close-icon { color: #8a6a00; }
+
+.card-warning-icon { color: #efc728; }
+
+.incard-error-icon { color: #ff3030; }
+
+.error-close-icon { color: #ff3030; }
+
+.error-item-list {  color: #d0211b; }
+
+.text-success { color: #008751; }
+
+a.text-success:hover,a.text-success:focus { color: #2b542c; }
+
+.text-info { color: #0070d1; }
+
+a.text-info:hover, a.text-info:focus { color: #245269; }
+
+.text-warning { color: #8a6a00; }
+
+a.text-warning:hover, a.text-warning:focus { color: #66512c; }
+
+.text-danger { color: #d0211b; }
+
+a.text-danger:hover, a.text-danger:focus { color: #843534; }
+*/
+
+/* This styles affect the styles of fields with validation error*/
+/*
+.input-validation-error { color: #d0211b; border-color: #d0211b; background-color: #fcebea; }
+
+.input-validation-error:focus { border-color: #d0211b; }
+*/
+
+/* These styles affect the styles of validation error messages*/
+/*
+div.validation-summary-errors { background-color: #fcebea;  color: #d0211b; font-size: 14px; border: 1px solid transparent; border-top: 1px solid #ff3030; }
+
+div.validation-summary-errors.container > h3 { color: #d0211b; }
+
+div.validation-summary-errors li input { color: #0074db; background-color: #fcebea; font-size: 14px; }
+
+div.validation-summary-errors li input:hover, div.validation-summary-errors li input:focus { color: #0074db; background-color: #fcebea; }
+*/
+
+
+/* This styles affect the color bar on the top of the Contact/ Application/ Agent Manager Dashboard/ Agent Advanced Search cards*/
+/*
+.elcn-colored-top { border-top: 10px solid #27f8e; }
+*/
+
+
+/* This style affects the background color for other pages */
+/*
+html { background-color: #f7f7f7; }
+*/
+
+
+/* Theses styles affect the colors for radio buttons */
+/*
+[type="radio"]:checked + label:before { border-color: #08234f; background-color: #08234f; }
+
+[type="radio"]:not(:checked) + label:before { border-color: #b2b3b7; }
+
+[type="radio"]:checked:disabled + label:before { border-color: #eee; background-color: #808080; }
+
+[type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after { background: #ffffff; border-color: #0074db; }
+*/
+
+/* Theses styles affect the color of buttons on Application Listing page */
+/*
+@media (min-width: 767px) {
+  h3 a.startApp { background-color: #08234f; color: #ffffff; }
+  h3 a.startApp:hover { background-color: #08234f; border-color: #08234f; } }
+
+@media (max-width: 767px) {.elcn-apply-group > h3 { background-color: #08234f; }
+  .elcn-apply-group > h3 a.startApp { color: #ffffff; }
+  .elcn-apply-group > h3:hover { background-color: #08234f;} }
+*/
+
+/* Theses styles affect the color of Tabbed Navigation on Application page */
+/*
+  ul.app-nav li a { color: #08234f; }
+  ul.app-nav li a:hover { color: #08234f; }
+  ul.app-nav li a.active { border-bottom: 2px solid #08234f; color: #08234f; }
+*/
+
+/* This style affects the color of Print img on Application card */
+/*
+.form-actions span { color: #b5bfbf; }
+*/
