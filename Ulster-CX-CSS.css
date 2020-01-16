@@ -34,7 +34,7 @@ For additional style attributes refer to the recruit-site.css and recruit-navbar
 
 /* Theses styles affect the styles for Navigation Bar */
 
-.recruit-navbar { background-color: #08234f;  border-bottom-color: #09b1db }
+.recruit-navbar { background-color: #041E42;  border-bottom-color: #009FDF; }
 
 .recruit-navbar .navbar-nav > li > a { color: #ffffff; background-color: #08234f; }
 
@@ -44,7 +44,7 @@ For additional style attributes refer to the recruit-site.css and recruit-navbar
 
 .recruit-navbar .navbar-nav > li > form > a:hover,.recruit-navbar .navbar-nav > li > form > a:focus { background-color: #08234f;color: #ffffff; }
 
-@media (min-width: 768px) { .recruit-navbar .main-navbar > li:hover:after,.recruit-navbar .main-navbar > li.active:after { background-color: #09b1db; } }
+@media (min-width: 768px) { .recruit-navbar .main-navbar > li:hover:after,.recruit-navbar .main-navbar > li.active:after { background-color: #009FDF; } }
 
 .recruit-navbar .navbar-nav > .active > a,.recruit-navbar .navbar-nav > .active > a:hover,.recruit-navbar .navbar-nav > .active > a:focus { color: #ffffff; background-color: #08234f; }
 
@@ -55,7 +55,7 @@ For additional style attributes refer to the recruit-site.css and recruit-navbar
 .navbar-nav > li > .dropdown-menu li a { color: #ffffff; }
 
 
-.recruit-navbar-logo { background-image: url("https://ulsteracuktestcrm.elluciancrmrecruit.com//WebResources/uu_UlsterUniversityLogo"); }
+.recruit-navbar-logo { background-image: url("//cdn.ulster.ac.uk/home/ulster-frontend/img/ulster-university-mobile.svg"); }
 
 
 
@@ -63,7 +63,7 @@ For additional style attributes refer to the recruit-site.css and recruit-navbar
 /* This style affects the border color and background image for Login/Reset Password/Change Password/My Account/ Prospect Inquiry Verify pages, no background image in mobile mode */
 
 .account-background .elcn-content { border: #08234f; }
-@media (min-width: 768px) {.account-background {background-image: url("https://www.ulster.ac.uk/__data/assets/image/0006/66039/1.1.jpg");} }
+@media (min-width: 768px) {.account-background {background-image: none;} }
 
 
 /* Theses styles affect the colors for primary buttons */
@@ -208,9 +208,9 @@ div.validation-summary-errors li input:hover, div.validation-summary-errors li i
 
 
 /* This styles affect the color bar on the top of the Contact/ Application/ Agent Manager Dashboard/ Agent Advanced Search cards*/
-/*
-.elcn-colored-top { border-top: 10px solid #27f8e; }
-*/
+
+.elcn-colored-top { border-top: 10px solid #009FDF; }
+
 
 
 /* This style affects the background color for other pages */
